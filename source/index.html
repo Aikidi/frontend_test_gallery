@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Gallery</title>    
+  </head>
+  <body>
+    <header class="page-header">
+        <div class="page-wrapper"> 
+            <form action="" class="upload-form" method="post");>
+                <input type="file" class="upload-form__link" id="uploadfile" name="localfile" accept="image/*, application/json" >
+                <input type="text" class="upload-form__field" placeholder="Введите url файла">
+                <button class="upload-form__button" type="submit">Загрузить</button>
+            </form> 
+        </div>               
+    </header>
+    <main class="page-main" id="drop-area">
+        <div class="page-wrapper">            
+            <ul class="gallery-list list-unstyled">
+                <li class="gallery-list__item" id="uploadzone" onclick=""><img class="gallery-list__img" src="img/upload.jpg"> </li>
+            </ul>               
+        </div>
+    </main>
+    <footer class="page-footer"></footer>
+    <script src="js/gallery.js"></script>
+    <script src="js/upload.js"></script>
+  </body>
+</html>

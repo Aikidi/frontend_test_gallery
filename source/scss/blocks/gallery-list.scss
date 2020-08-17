@@ -1,0 +1,42 @@
+.gallery-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery-list__item {
+	display: flex;
+	position: relative;
+	padding: 1px;
+	background-color: #ffffff;
+	background-image: url(img/placeholder-picture.svg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+	&:hover {
+	filter: sepia(1);
+	}	
+}
+
+.gallery-list__img {
+	width: 100%;
+}
+
+.gallery-list__del-button {
+	position: absolute;
+	display: none;
+	right: 5px;
+	top: 5px;
+	width: 21px;
+    height: 21px;
+    border: none;
+    outline: none;
+	background-image: url(img/cross.svg);
+    background-color: transparent;
+    @media (max-width: 768px) {
+		display: block;
+	}
+}
+
+.gallery-list__item:hover .gallery-list__del-button {
+	display: block;
+}

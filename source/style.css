@@ -1,0 +1,141 @@
+body {
+  margin: 0px;
+}
+
+.list-unstyled {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-wrapper {
+  max-width: 860px;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.page-header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 50px;
+}
+
+.page-main {
+  background-color: #d2f3e7;
+  min-height: 800px;
+}
+
+.gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-list__item {
+  display: flex;
+  position: relative;
+  padding: 1px;
+  background-color: #ffffff;
+  background-image: url(img/placeholder-picture.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+}
+.gallery-list__item:hover {
+  filter: sepia(1);
+}
+
+.gallery-list__img {
+  width: 100%;
+}
+
+.gallery-list__del-button {
+  position: absolute;
+  display: none;
+  right: 5px;
+  top: 5px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  outline: none;
+  background-image: url(img/cross.svg);
+  background-color: transparent;
+}
+@media (max-width: 768px) {
+  .gallery-list__del-button {
+    display: block;
+  }
+}
+
+.gallery-list__item:hover .gallery-list__del-button {
+  display: block;
+}
+
+.upload-form {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.upload-form__link {
+  display: none;
+}
+
+.upload-form__field {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 15px;
+  margin-right: 10px;
+  padding: 10px;
+  border: 2px solid #767676;
+}
+.upload-form__field:hover {
+  border-color: #7fffd4;
+}
+.upload-form__field:focus {
+  outline: none;
+  border-radius: 10px;
+  border-color: #aae6d2;
+}
+
+.upload-form__button {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 2px solid #767676;
+}
+.upload-form__button:hover {
+  outline: none;
+  border-color: #7fffd4;
+  color: #7fffd4;
+  background-color: #102921;
+}
+.upload-form__button:active {
+  border-radius: 10px;
+  border-color: #54b796;
+  color: #54b796;
+  outline: none;
+  background-color: #134a39;
+}
+.upload-form__button:focus {
+  outline: none;
+  border-radius: 10px;
+  border-color: #aae6d2;
+}
+
+.page-footer {
+  min-height: 90px;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
